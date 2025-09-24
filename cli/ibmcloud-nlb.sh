@@ -2,7 +2,8 @@
 set -euo pipefail
 
 # Minimal helper to create an NLB + listener + pool + members for CockroachDB.
-# Requires: ibmcloud CLI with VPC plugin (`ibmcloud is ...`) and login done.
+# Requires `ibmcloud` CLI (with VPC plugin: `ibmcloud is ...`) and `jq`. Login first: `ibmcloud login` (or `ibmcloud login --sso`).
+
 
 usage() {
   cat <<EOF

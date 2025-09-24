@@ -1,3 +1,4 @@
+-- https://www.cockroachlabs.com/docs/stable/node-shutdown
 -- Graceful node shutdown timings (tune to your LB probe cadence & app SLOs)
 -- initial_wait: time to advertise unready so LB stops routing before cutting connections
 SET CLUSTER SETTING server.shutdown.initial_wait = '12s';

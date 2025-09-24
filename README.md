@@ -22,7 +22,7 @@ This package provides a practical, IBM-Cloud–focused setup for:
 ## Quick start (Terraform)
 
 ```bash
-cd scripts/connection-management-ibmcloud/terraform
+cd terraform
 # Export IBM Cloud creds as needed before running terraform init/plan/apply.
 terraform init
 terraform plan -var 'region=us-south' \
@@ -42,7 +42,7 @@ The module creates:
 ## Quick start (IBM Cloud CLI)
 
 ```bash
-cd scripts/connection-management-ibmcloud/cli
+cd cli
 ./ibmcloud-nlb.sh \
   --name crdb-nlb \
   --subnet-id <subnet-id> \
